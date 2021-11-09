@@ -21,11 +21,10 @@ p {
   font-weight: 500;
 }
 .main-bg {
-  background-image: url(./images/pattern-background-desktop.svg);
+  background-image: url("/images/pattern-background-desktop.svg");
   background-repeat: no-repeat;
-  background-position: center;
   overflow: hidden;
-  background-size: cover;
+  background-size: contain;
   background-color: var(--pale-blue);
   /* height: 100vh; */
 }
@@ -125,6 +124,35 @@ a:hover {
 }
 .btn-cancel:hover {
   color: var(--dark-blue);
+}
+
+@media (max-width: 375px) {
+  .main-bg {
+    background-image: url("/images/pattern-background-mobile.svg");
+    background-repeat: no-repeat;
+    overflow: hidden;
+    background-size: contain;
+    background-color: var(--pale-blue);
+  }
+  .main-container {
+    width: 90%;
+    margin: 50px auto;
+  }
+  .content .article {
+    padding: 0 4px;
+    line-height: 25px;
+  }
+
+  .play-icon img {
+    margin-right: -10px;
+  }
+  .flex-column {
+    margin-right: 10px;
+  }
+  .flex-column h3 {
+    font-size: 17px;
+    font-weight: 900;
+  }
 }
 
 /* .attribution { font-size: 11px; text-align: center; }
