@@ -126,7 +126,7 @@ a:hover {
   color: var(--dark-blue);
 }
 
-@media (max-width: 480px) {
+@media (min-width: 480px) {
   .main-bg {
     background-image: url("/images/pattern-background-mobile.svg");
     background-repeat: no-repeat;
